@@ -1,0 +1,9 @@
+.button {
+    color: var(--color-light-primary-100);
+    background: var(--color-light-primary-500);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    
+}

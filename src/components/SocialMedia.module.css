@@ -1,0 +1,10 @@
+.social-media {
+    float: left;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 18.5rem 1rem;
+    color: var(--color-light-primary-600)
+     
+};
+

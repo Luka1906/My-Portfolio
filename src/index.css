@@ -1,17 +1,19 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+
 }
 
 
 :root {
   font-family: "Roboto";
   color: #242424;
+  overflow: hidden;
   --color-light-primary-100: #e6e6fa;
   --color-light-primary-200: #d8bfd8;
   --color-light-primary-300: #dda0dd;
   --color-light-primary-400: #ba55d3;
   --color-light-primary-500: #8b008b;
   --color-light-primary-600: #800080;
+  --color-light-primary-700: #39153f;
 }

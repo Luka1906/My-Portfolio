@@ -1,13 +1,17 @@
 .app {
-    overflow-y: hidden;
-}
-
-#dark {
-    background: #000;
- 
-   
+  height: 100vh;
+  min-height: 920px;
+  min-width: 700px;
 }
 
 #light {
-    background: #fff;
+  background: #fff;
+}
+
+#dark {
+  background: #000;
+}
+
+#dark main {
+  color: white;
 }

@@ -61,7 +61,7 @@ const CustomizedSwitches = () => {
   return (
     <FormGroup>
       <FormControlLabel
-        control={<MaterialUISwitch onChange={theme.toggleTheme}  sx={{ m: 1 }}  />}
+        control={<MaterialUISwitch onChange={theme.toggleTheme} checked={theme.theme === 'dark'}  sx={{ m: 1 }}  />}
       />
     </FormGroup>
   );

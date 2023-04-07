@@ -4,8 +4,6 @@ import { NavLink } from "react-router-dom";
 import CustomizedSwitches from "./Switch";
 
 
-
-
 const NavBar = () => {
     return (
     <Fragment>
@@ -17,11 +15,11 @@ const NavBar = () => {
         </div>
         <nav>
           <ul className={classes["nav-bar"]}>
-            <NavLink> <li>Home</li></NavLink>
-            <NavLink> <li>About</li></NavLink>
-            <NavLink> <li>Skills</li></NavLink>
-            <NavLink> <li>Work</li></NavLink>
-            <NavLink> <li>Contact</li></NavLink>
+            <NavLink className={({isActive})=> isActive ? classes.active : undefined } to="/"> <li>Home</li></NavLink>
+            <NavLink className={({isActive})=> isActive ? classes.active : undefined } to="about"> <li>About</li></NavLink>
+            <NavLink className={({isActive})=> isActive ? classes.active : undefined } to="skills" > <li>Skills</li></NavLink>
+            <NavLink className={({isActive})=> isActive ? classes.active : undefined } to="work" > <li>Work</li></NavLink>
+            <NavLink className={({isActive})=> isActive ? classes.active : undefined }  to="contact"> <li>Contact</li></NavLink>
             <li className={classes.switch}><CustomizedSwitches/></li>
           </ul>
         

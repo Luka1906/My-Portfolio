@@ -1,5 +1,4 @@
 import MainPage from "../components/Main"
-import NavBar from "../components/Navbar"
 
 const HomePage = () => {
     return (

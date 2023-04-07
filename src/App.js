@@ -3,13 +3,17 @@ import HomePage from "./pages/Home";
 import { createContext, useState } from "react";
 import "./App.css";
 import RootLayout from "./pages/Root";
+import AboutPage from "./pages/About";
+import ContactPage from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
     children: [
-      { path: "/", element: <HomePage /> }
+      { index:true, element: <HomePage /> },
+      { path: "about", element: <AboutPage/>},
+      {path:"contact", element: <ContactPage/>}
     
     ],
   }
@@ -27,7 +31,9 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme: theme, toggleTheme: toggleTheme }}>
       <div className="app" id={theme}>
+        <main>
         <RouterProvider router={router} />
+        </main>   
       </div>
     </ThemeContext.Provider>
   );

@@ -3,15 +3,19 @@
   src: url("../assets/font/LaBelleAurore-Regular.ttf");
 }
 
+
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 1rem;
+
 
 }
 
 .top-tag {
-  padding: 5rem;
+  padding: 0 5rem;
   font-family: "La Belle Aurore";
   font-size: 1.2rem;
   color: var(--color-light-primary-300);
@@ -19,7 +23,7 @@
 
 .bottom-tag {
   float: right;
-  padding: 1rem 5rem;
+  padding: 0 5rem;
   font-family: "La Belle Aurore";
   font-size: 1.2rem;
   color: var(--color-light-primary-300);
@@ -39,6 +43,7 @@
   font-size: 1.2rem;
   color: var(--color-light-primary-300);
 }
+
 
 .avatar img {
   width: 20rem;

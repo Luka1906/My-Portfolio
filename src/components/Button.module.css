@@ -1,9 +1,21 @@
+
 .button {
-    color: var(--color-light-primary-100);
-    background: var(--color-light-primary-500);
-    border: 1px solid black;
-    border-radius: 0.5rem;
-    padding: 0.4rem;
+    background-image: linear-gradient(to right, #6a3093 0%, #a044ff  51%, #6a3093  100%);
+    padding: 15px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+    border: none;
     cursor: pointer;
-    
-}
+  }
+
+  .button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+ 

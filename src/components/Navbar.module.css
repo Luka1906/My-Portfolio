@@ -5,11 +5,13 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 0.5rem 1rem;
+
+
+
 }
 
 .logo {
-  padding: 0 1rem;
   font-size: xx-large;
 }
 .logo-letter {
@@ -19,14 +21,24 @@
   box-shadow: 1px 1px 1px 1px var(--color-light-primary-500);
 }
 
+
+
 .nav-bar {
   list-style: none;
   display: flex;
   gap: 2rem;
-  padding: 0 1rem;
   align-items: center;
+
 }
 .nav-bar a {
   text-decoration: none;
   color: var(--color-light-primary-500);
 }
+
+.nav-bar a:hover,
+.nav-bar a.active {
+  color: var(--color-light-primary-300);
+}
+
+
+

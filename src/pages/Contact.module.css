@@ -1,0 +1,22 @@
+.contact-wrapper {
+    display: flex;
+   
+}
+
+.contact {
+  width: 30rem;
+  padding: 0 1rem;
+  position: relative;
+  top: 2rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact h1,
+.contact h3,
+.number {
+    color: var(--color-light-primary-500);
+}
+

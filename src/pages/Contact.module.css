@@ -1,11 +1,14 @@
 .contact-wrapper {
-    display: flex;
-   
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+  background-color: rgb(241 245 249);
 }
 
 .contact {
   width: 30rem;
-  padding: 0 1rem;
   position: relative;
   top: 2rem;
   text-align: justify;
@@ -17,6 +20,5 @@
 .contact h1,
 .contact h3,
 .number {
-    color: var(--color-light-primary-500);
+  color: var(--color-light-primary-500);
 }
-

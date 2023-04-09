@@ -2,25 +2,18 @@
   font-family: "La Belle Aurore";
   src: url("../assets/font/LaBelleAurore-Regular.ttf");
 }
+
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
-
-
+  align-items: center;
 
 }
 
-.logo {
-  font-size: xx-large;
+nav {
+  display: flex;
+  gap: 1rem;
 }
-.logo-letter {
-  color: var(--color-light-primary-500);
-  font-size: 4rem;
-  margin-right: 0.3rem;
-  box-shadow: 1px 1px 1px 1px var(--color-light-primary-500);
-}
-
 
 
 .nav-bar {
@@ -28,7 +21,6 @@
   display: flex;
   gap: 2rem;
   align-items: center;
-
 }
 .nav-bar a {
   text-decoration: none;
@@ -40,5 +32,52 @@
   color: var(--color-light-primary-300);
 }
 
+.bars {
+  position: fixed;
+  right: 2rem;
+  top: 1.8rem;
+  color: var(--color-light-primary-600);
+  z-index: 100000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
 
 
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar li {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bars {
+    display: block;
+    transition: 0.2s;
+  }
+
+  .bars:hover {
+   color: var(--color-light-primary-300);
+   
+  }
+  .switch {
+    position: fixed;
+    top: 1rem;
+    right: 3rem;
+  }
+}
+#visiblemenu {
+  color: red;
+}

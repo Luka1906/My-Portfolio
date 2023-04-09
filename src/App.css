@@ -1,8 +1,15 @@
-.app {
+body {
+  overflow: hidden;
   height: 100vh;
-  min-height: 920px;
-  min-width: 700px;
 }
+
+.app {
+  height: 100%;
+  width: 100%;
+  min-height: 60rem;
+
+}
+
 
 #light {
   background: #fff;
@@ -15,3 +22,4 @@
 #dark main {
   color: white;
 }
+

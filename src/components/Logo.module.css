@@ -1,0 +1,10 @@
+.logo {
+    font-size: xx-large;
+    padding: 0.5rem 1rem;
+  }
+  .logo-letter {
+    color: var(--color-light-primary-500);
+    font-size: 4rem;
+    margin-right: 0.3rem;
+    box-shadow: 1px 1px 1px 1px var(--color-light-primary-500);
+  }

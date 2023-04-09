@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { useContext } from "react";
-import { ThemeContext } from "../App";
+import AppContext from "../store/app-context";
 
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
@@ -56,12 +56,12 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 
 const CustomizedSwitches = () => {
-  const theme = useContext(ThemeContext);
-  console.log(theme)
+  const appContext = useContext(AppContext);
+  console.log(appContext.theme)
   return (
     <FormGroup>
       <FormControlLabel
-        control={<MaterialUISwitch onChange={theme.toggleTheme} checked={theme.theme === 'dark'}  sx={{ m: 1 }}  />}
+        control={<MaterialUISwitch onChange={appContext.toggleTheme} checked={appContext.theme === 'dark'}  sx={{ m: 1 }}  />}
       />
     </FormGroup>
   );

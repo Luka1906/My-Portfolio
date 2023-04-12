@@ -7,14 +7,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 nav {
   display: flex;
   gap: 1rem;
 }
-
 
 .nav-bar {
   list-style: none;
@@ -35,10 +33,10 @@ nav {
 .bars {
   position: fixed;
   right: 2rem;
-  top: 1.8rem;
+  top: 1.5rem;
   color: var(--color-light-primary-600);
   z-index: 100000;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   display: none;
 }
@@ -48,33 +46,22 @@ nav {
     overflow: auto;
   }
 
-
   .nav-bar {
     display: none;
   }
 
-  .nav-bar li {
-    font-size: 1.2rem;
-    width: 100%;
-  }
-
-  .icons {
-    display: flex;
-    flex-direction: column;
-  }
-
   .bars {
     display: block;
+    position: fixed;
     transition: 0.2s;
   }
 
   .bars:hover {
-   color: var(--color-light-primary-300);
-   
+    color: var(--color-light-primary-300);
   }
   .switch {
     position: fixed;
-    top: 1rem;
+    top: 0;
     right: 3rem;
   }
 }

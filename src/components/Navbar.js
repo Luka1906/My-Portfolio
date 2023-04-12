@@ -6,13 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Logo from "./Logo";
 import AppContext from "../store/app-context";
+import {motion} from 'framer-motion'
 
 const NavBar = () => {
   const appContext = useContext(AppContext);
 
   return (
     <Fragment>
-      <div className={classes.header}>
+      <motion.div initial={{y:-250}} animate={{y: 0}} transition={{type: "spring" ,stiffness:120}} className={classes.header}>
         <Logo />
         <nav>
           <ul
@@ -26,7 +27,7 @@ const NavBar = () => {
               to="/"
             >
               {" "}
-              <li>Home</li>
+              <motion.li whileHover={{originX: 0, scale:1.2}} transition={{type:"spring", stiffness:350}}>Home</motion.li>
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -35,7 +36,7 @@ const NavBar = () => {
               to="about"
             >
               {" "}
-              <li>About</li>
+              <motion.li whileHover={{originX: 0, scale:1.2}} transition={{type:"spring", stiffness:350}}>About</motion.li>
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -44,7 +45,7 @@ const NavBar = () => {
               to="skills"
             >
               {" "}
-              <li>Skills</li>
+              <motion.li whileHover={{originX: 0, scale:1.2}} transition={{type:"spring", stiffness:350}}>Skills</motion.li>
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -53,7 +54,7 @@ const NavBar = () => {
               to="work"
             >
               {" "}
-              <li>Work</li>
+              <motion.li whileHover={{originX: 0, scale:1.2}} transition={{type:"spring", stiffness:350}}>Work</motion.li>
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -62,7 +63,7 @@ const NavBar = () => {
               to="contact"
             >
               {" "}
-              <li>Contact</li>
+              <motion.li whileHover={{originX: 0, scale:1.2}} transition={{type:"spring", stiffness:350}}>Contact</motion.li>
             </NavLink>
           </ul>
 
@@ -77,7 +78,7 @@ const NavBar = () => {
             />
           )}
         </nav>
-      </div>
+      </motion.div>
     </Fragment>
   );
 };

@@ -1,75 +1,100 @@
-
 .cube {
-    width: 30%;
-    height: 100%;
-    padding-top: 10rem;
-    position: absolute;
-    right: 0;
-
+  width: 50%;
+  padding-top: 10rem;
 }
 
 .cubespinner {
-    animation-name: spincube;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-    transform-style: preserve-3d;
-    transform-origin: 100px 100px 0;
-    margin-left: cal(50% - 100px);
-   
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
 }
 .cubespinner div {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #ccc;
-    background: rgba(255,255,255,0.4);
-    font-size: 9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 20px 0px var(--color-light-primary-200) ;
-   
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px var(--color-light-primary-200);
 }
 
 .icon1 {
-    transform: translateZ(100px );
+  transform: translateZ(100px);
 }
 .icon2 {
-    transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(100px);
 }
 .icon3 {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
 }
 .icon4 {
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px );
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
 }
 .icon5 {
-    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
 }
 .icon6 {
-    transform: rotateX(-90deg) translateZ(100px);
+  transform: rotateX(-90deg) translateZ(100px);
 }
 
-
 @keyframes spincube {
-    from,
-    to {
-        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-    }
-    16% {
-        transform: rotateY(-90deg);
-    }
-    33% {
-        transform: rotateY(-90deg) rotateZ(90deg);
-    }
-    50% {
-        transform: rotateY(-180deg) rotateZ(90deg);
-    }
-    66% {
-        transform: rotateY(-270deg) rotateZ(90deg);
-    }
-    83% {
-        transform: rotateX(90deg)
-    }
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .cube {
+
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0 5rem;
+  
+  }
+
+  .cubespinner div {
+    width: 160px;
+    height: 160px;
+  }
+  .icon1 {
+    transform: translateZ(80px);
+  }
+  .icon2 {
+    transform: rotateY(90deg) translateZ(80px);
+  }
+  .icon3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(80px);
+  }
+  .icon4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(80px);
+  }
+  .icon5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(80px);
+  }
+  .icon6 {
+    transform: rotateX(-90deg) translateZ(80px);
+  }
 }

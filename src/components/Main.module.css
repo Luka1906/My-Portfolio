@@ -3,64 +3,129 @@
   src: url("../assets/font/LaBelleAurore-Regular.ttf");
 }
 
-
-
 .main-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-right: 1rem;
-
-
 }
 
 .top-tag {
   padding: 0 5rem;
   font-family: "La Belle Aurore";
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: var(--color-light-primary-300);
 }
 
 .bottom-tag {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
   padding: 0 5rem;
   font-family: "La Belle Aurore";
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: var(--color-light-primary-300);
 }
 .main-text::before {
   content: "<h1>";
   display: flex;
+  position: relative;
+  right: 1.5rem;
   font-family: "La Belle Aurore";
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: var(--color-light-primary-300);
 }
 .main-text::after {
   content: "<h1>";
   display: flex;
+  position: relative;
+  left: 4rem;
   justify-content: flex-end;
   font-family: "La Belle Aurore";
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: var(--color-light-primary-300);
 }
+.main-text > * {
+  line-height: 3.5rem;
+}
 
+.before-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-right: 0.4rem;
+}
+.name {
+  color: var(--color-light-primary-600);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.position {
+  color: var(--color-light-primary-400);
+  position: relative;
+  bottom: 2.5rem;
+  right: 5.7rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
 
 .avatar img {
   width: 20rem;
-  border-radius: 1rem;
-  background: transparent;
-
+  height: 20rem;
+  cursor: pointer;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
+  animation: liquid 8s linear infinite alternate;
 }
-.before-name {
-    font-size: 32px;
-    font-weight: 800;
-    margin-right: 0.4rem;
-
+.avatar img:hover {
+  animation-play-state: paused;
 }
-.name {
-    color: var(--color-light-primary-600);
-    font-size: 32px;
-    font-weight: 800;
-   
+@keyframes liquid {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
 }
 
+.dark-animation {
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 26%) 0,
+    var(--color-light-primary-400) 5%,
+    hsl(0, 0%, 23%) 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+  padding: 0 4.6rem;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0%;
+  }
+  60% {
+    background-position: 300px;
+  }
+  100% {
+    background-position: 300px;
+  }
+}

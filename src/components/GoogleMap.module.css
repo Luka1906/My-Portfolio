@@ -1,5 +1,6 @@
 .map-container {
   width: 50rem;
+  min-height: 35rem;
   height: 35rem;
   margin-top: 2.5rem;
 
@@ -16,16 +17,14 @@ label .info-text {
 }
 
 .map-info {
-  width: 16rem;
-  height: 10rem;
   border: none;
   position: absolute;
   z-index: 99999;
-  margin-top: 8rem;
+  margin-top: 7.5rem;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  line-height: 1.4rem;
   background-color: var(--color-light-primary-100);
   font-weight: 500;
   
@@ -35,4 +34,16 @@ label .info-text {
 .email {
     color: var(--color-light-primary-600);
     font-weight: 700;
+}
+
+@media(max-width:1200px) {
+  .map {
+    width: 35rem
+  }
+  .map-info {
+    transform: scale(0.8);
+    position: absolute;
+    right: 0.9rem;
+   
+  }
 }

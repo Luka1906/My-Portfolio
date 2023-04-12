@@ -1,16 +1,16 @@
 
 .button {
     background-image: linear-gradient(to right, #6a3093 0%, #a044ff  51%, #6a3093  100%);
-    padding: 15px 25px;
+    padding: 8px 15px;
     text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     background-size: 200% auto;
     color: white;            
     border-radius: 10px;
     display: block;
     border: none;
     cursor: pointer;
+    margin-top: 1rem;
  
   }
 

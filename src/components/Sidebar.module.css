@@ -60,10 +60,24 @@
 }
 
 .x-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--color-light-primary-300);
   cursor: pointer;
   transition: 0.1s;
+  padding: 0.4rem;
+  animation: x-rotate 0.5s ease-in-out 
+}
+@keyframes x-rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: rotate(-180deg);
+    opacity: 1;
+  }
+  
 }
 
 .menu-header .x-icon:hover {

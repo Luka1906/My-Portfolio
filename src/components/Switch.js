@@ -7,8 +7,8 @@ import AppContext from "../store/app-context";
 
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
-  width: 62,
-  height: 34,
+  width: 55,
+  height: 27,
   padding: 7,
   "& .MuiSwitch-switchBase": {
     margin: 1,
@@ -30,8 +30,8 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
   "& .MuiSwitch-thumb": {
     backgroundColor: theme.palette.mode === "dark" ? "#003892" : "#001e3c",
-    width: 32,
-    height: 32,
+    width: 25,
+    height: 25,
     "&:before": {
       content: "''",
       position: "absolute",

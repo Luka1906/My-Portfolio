@@ -22,3 +22,19 @@
 .number {
   color: var(--color-light-primary-500);
 }
+
+@media (max-width: 1200px) {
+  .contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+
+
+
+  }
+
+  
+

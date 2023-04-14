@@ -1,8 +1,8 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import AppContext from "../store/app-context";
 
 const AppWrapper = (props) => {
-  const appContext = useContext(AppContext);
+  const appContext = useContext(AppContext)
   if(appContext.theme === 'dark') {
     document.body.classList.add('dark');
     document.body.classList.remove('light');

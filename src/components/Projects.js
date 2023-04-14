@@ -11,13 +11,21 @@ import image1 from "../assets/images/project1.jpg";
 import image2 from "../assets/images/project2.jpg";
 import image3 from "../assets/images/project3.jpg";
 import image4 from "../assets/images/project2.jpg";
+import { motion } from "framer-motion";
+import { navBarAnimation } from "../animations/animations";
 
 const Projects = () => {
   return (
     <div className={classes["projects-wrapper"]}>
-      <h2>Projects Gallery</h2>
+      <motion.h2
+        variants={navBarAnimation}
+        initial={"hidden"}
+        animate={"visible"}
+      >
+        Projects Gallery
+      </motion.h2>
       <div className={classes.projects}>
-        <div className={classes["project-container"]}>
+        <motion.div className={classes["project-container"]}>
           <div className={classes["project-content"]}>
             <div
               className={`${classes["projects-overlay"]} ${classes["project__overlay--blur"]}`}
@@ -44,8 +52,8 @@ const Projects = () => {
               />
             </a>
           </div>
-        </div>
-        <div className={classes["project-container"]}>
+        </motion.div>
+        <motion.div className={classes["project-container"]}>
           <div className={classes["project-content"]}>
             <div
               className={`${classes["projects-overlay"]} ${classes["project__overlay--blur"]}`}
@@ -76,8 +84,8 @@ const Projects = () => {
               />
             </a>
           </div>
-        </div>
-        <div className={classes["project-container"]}>
+        </motion.div>
+        <motion.div className={classes["project-container"]}>
           <div className={classes["project-content"]}>
             <div
               className={`${classes["projects-overlay"]} ${classes["project__overlay--blur"]}`}
@@ -117,8 +125,8 @@ const Projects = () => {
               />
             </a>
           </div>
-        </div>
-        <div className={classes["project-container"]}>
+        </motion.div>
+        <motion.div className={classes["project-container"]}>
           <div className={classes["project-content"]}>
             <div
               className={`${classes["projects-overlay"]} ${classes["project__overlay--blur"]}`}
@@ -147,7 +155,7 @@ const Projects = () => {
               />
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

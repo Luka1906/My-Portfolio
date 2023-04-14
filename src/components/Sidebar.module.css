@@ -1,3 +1,4 @@
+
 .side-bar {
   transform: translateY(20%);
 }
@@ -55,7 +56,7 @@
 
 .menu-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -64,7 +65,7 @@
   color: var(--color-light-primary-300);
   cursor: pointer;
   transition: 0.1s;
-  padding: 0.4rem;
+  padding: 1rem 0.4rem;
   animation: x-rotate 0.5s ease-in-out 
 }
 @keyframes x-rotate {

@@ -7,7 +7,6 @@ const WorkPage = () => {
         <motion.div
         initial="out"
         animate="end"
-        exit="out"
         variants={animationThree}
         transition={transition}
         >

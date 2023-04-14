@@ -6,14 +6,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Logo from "./Logo";
 import AppContext from "../store/app-context";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
+import { linksHoverAnimation, navBarAnimation } from "../animations/animations";
 
 const NavBar = () => {
   const appContext = useContext(AppContext);
 
   return (
     <Fragment>
-      <motion.div initial={{y:-250}} animate={{y: 0}} transition={{type: "spring" ,stiffness:120}} className={classes.header}>
+      <motion.div
+        // variants={navBarAnimation}
+        // initial={"hidden"}
+        // animate={"visible"}
+        className={classes.header}
+      >
         <Logo />
         <nav>
           <ul
@@ -27,7 +33,12 @@ const NavBar = () => {
               to="/"
             >
               {" "}
-              <motion.li whileHover={{originX: 0, scale:1.2}} transition={{type:"spring", stiffness:350}}>Home</motion.li>
+              <motion.li
+                variants={linksHoverAnimation}
+                whileHover={"linkHover"}
+              >
+                Home
+              </motion.li>
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -36,7 +47,12 @@ const NavBar = () => {
               to="about"
             >
               {" "}
-              <motion.li whileHover={{originX: 0, scale:1.2}} transition={{type:"spring", stiffness:350}}>About</motion.li>
+              <motion.li
+                variants={linksHoverAnimation}
+                whileHover={"linkHover"}
+              >
+                About
+              </motion.li>
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -45,7 +61,12 @@ const NavBar = () => {
               to="skills"
             >
               {" "}
-              <motion.li whileHover={{originX: 0, scale:1.2}} transition={{type:"spring", stiffness:350}}>Skills</motion.li>
+              <motion.li
+                variants={linksHoverAnimation}
+                whileHover={"linkHover"}
+              >
+                Skills
+              </motion.li>
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -54,7 +75,12 @@ const NavBar = () => {
               to="work"
             >
               {" "}
-              <motion.li whileHover={{originX: 0, scale:1.2}} transition={{type:"spring", stiffness:350}}>Work</motion.li>
+              <motion.li
+                variants={linksHoverAnimation}
+                whileHover={"linkHover"}
+              >
+                Work
+              </motion.li>
             </NavLink>
             <NavLink
               className={({ isActive }) =>
@@ -63,7 +89,13 @@ const NavBar = () => {
               to="contact"
             >
               {" "}
-              <motion.li whileHover={{originX: 0, scale:1.2}} transition={{type:"spring", stiffness:350}}>Contact</motion.li>
+              <motion.li
+                variants={linksHoverAnimation}
+                whileHover={"linkHover"}
+
+              >
+                Contact
+              </motion.li>
             </NavLink>
           </ul>
 

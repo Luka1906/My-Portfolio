@@ -1,24 +1,23 @@
-body {
-    height: 100vh;
+.wrapper {
+  zoom: 0.9;
 }
 .skills-header {
-    width: 100%;
-    text-align: center;
-    margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 
-
-}
-
-.skills  {
-    position: absolute;
-    top: 30rem;
-    transform: rotate(-90deg);
-    border-bottom: 2px solid var(--color-light-primary-500);
-    font-size: 1.6rem;
-    font-weight: 500;
   
 
-    
-    
 }
 
+.skills-header h2 {
+    color: var(--color-light-primary-600)
+}
+
+.intro {
+    width: 60%;
+    margin: 2rem auto;
+  
+   
+}

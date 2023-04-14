@@ -9,7 +9,6 @@ const AboutPage = () => {
     <motion.div
     initial="out"
     animate="in"
-    exit="out"
     variants={animationTwo}
     transition={transition}
     >

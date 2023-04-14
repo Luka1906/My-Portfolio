@@ -1,0 +1,96 @@
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.skillCircles {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-light-primary-500);
+  color: #fff;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.graph-icon {
+  font-size: 1.7rem;
+  color: var(--color-light-primary-100)
+}
+
+.line {
+  transform: rotate(180deg);
+}
+
+.line1,
+.line5 {
+  height: 4rem;
+  border: 1.3px solid var(--color-light-primary-500);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.line2,
+.line3,
+.line4 {
+  height: 5.5rem;
+  border: 1.3px solid var(--color-light-primary-500);
+  position: relative;
+}
+
+.card1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  align-items: center;
+  width: 20rem;
+  position: absolute;
+  right: 55%;
+ 
+}
+
+.card1 ul,
+.card2 ul,
+.card3 ul,
+.card4 ul {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.card2 {
+  width: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  position: absolute;
+  left: 55%;
+  top: 1rem;
+
+
+}
+
+.card3 {
+  width: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  gap: 0.3rem;
+  right: 55%;
+  top: 3rem;
+  
+
+}
+.card4 {
+  width: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  position: absolute;
+  left: 55%;
+  bottom: -13rem;
+}

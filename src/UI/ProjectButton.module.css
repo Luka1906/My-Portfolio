@@ -1,0 +1,19 @@
+.button {
+    background-image: linear-gradient(
+      to right,
+      #9d50bb 0%,
+      #6e48aa 51%,
+      #9d50bb 100%
+    );
+    margin-top: 2.5rem;
+    padding: 0.8rem 3rem;
+    border:none;
+    background-size: 200%;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    cursor: pointer;
+   
+   
+  }
+  

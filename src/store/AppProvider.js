@@ -6,24 +6,29 @@ import AppContext from "./app-context";
 
 const AppProvider = (props) => {
   const [theme, setTheme] = useState("light");
-  const [showMenu, showMenuHandler] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  
+
 
   const toggleTheme = () => {
     setTheme((prevMode) => (prevMode === "light" ? "dark" : "light"));
   };
 
   const closeHandler = () => {
-    showMenuHandler(false);
+    setShowMenu(false);
+
   };
   const showHandler = () => {
-    showMenuHandler(true);
+    setShowMenu(true);
+
   };
+
 
   const isMobile = useMediaQuery("(min-width:768px)");
 
   useEffect(() => {
     if (isMobile) {
-      showMenuHandler(false);
+      setShowMenu(false);
     }
   }, [isMobile]);
   
@@ -32,8 +37,7 @@ const AppProvider = (props) => {
     toggleTheme: toggleTheme,
     menu: showMenu,
     onClose: closeHandler,
-    onShow: showHandler
-
+    onShow: showHandler,
   }
 
   return (

@@ -1,23 +1,31 @@
-.wrapper {
-  zoom: 0.9;
-}
+
 .skills-header {
   width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+}
 
-  
-
+.skills-header p {
+  text-align: justify;
+  white-space:break-spaces;
 }
 
 .skills-header h2 {
-    color: var(--color-light-primary-600)
+  color: var(--color-light-primary-600);
 }
 
 .intro {
-    width: 60%;
-    margin: 2rem auto;
-  
-   
+  width: 60%;
+  margin: 2rem auto;
+}
+
+@media (max-width: 576px) {
+  .skills-header {
+    margin-top: 5rem;
+    font-size: 1.3rem;
+  }
+ 
+
+
 }

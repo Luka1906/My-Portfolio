@@ -1,0 +1,59 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--color-light-primary-100);
+  border-radius: 1rem;
+}
+
+.projects img {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 1rem;
+}
+
+@media (max-width:576px) {
+  .projects img {
+    width: 28rem;
+    height: 28rem;
+    border-radius: 1rem;
+    object-fit: contain;
+  }
+  
+}
+
+.projects p {
+  color: var(--color-light-primary-700);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.project-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.project-icons a {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.github,
+.play-icon {
+  font-size: 1.8rem;
+  color: var(--color-light-primary-400);
+}
+.play-icons a {
+  cursor: pointer;
+}

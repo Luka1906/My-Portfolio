@@ -8,6 +8,8 @@
   flex-direction: column;
   align-items: center;
   padding-right: 1rem;
+
+
 }
 
 .top-tag {
@@ -61,7 +63,7 @@
 }
 
 .position {
-  color: var(--color-light-primary-400);
+  color: var(--color-light-primary-500);
   position: relative;
   bottom: 2.5rem;
   right: 5.7rem;
@@ -107,11 +109,12 @@
 }
 
 .dark-animation {
+
   background: linear-gradient(
     to right,
-    hsl(0, 0%, 26%) 0,
-    var(--color-light-primary-400) 5%,
-    hsl(0, 0%, 23%) 20%
+    hsl(309, 100%, 9%) 0,
+    var(--color-light-primary-600) 5%,
+    var(--color-light-primary-200) 20%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -130,3 +133,5 @@
     background-position: 300px;
   }
 }
+
+

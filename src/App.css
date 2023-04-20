@@ -1,25 +1,165 @@
+/* Dark Mode CSS */
 
 .app {
-  height: 100%;
-  width: 100%;
-  min-height: 60rem;
+  background-color: #121212;
+  height: 100vh;
+  overflow: auto;
+}
 
+#light {
+  background: #faf8f8;
+}
+
+/* Dark Mode - Home Page */
+
+#dark .global-logo {
+  color: var(--color-light-primary-200);
+}
+
+#dark .global-m__letter {
+  stroke: var(--color-light-primary-300);
+}
+
+#dark .global-linkedin,
+#dark .global-github,
+#dark .global-instagram {
+  color: var(--color-light-primary-200);
+}
+
+#dark .global-linkedin:hover,
+#dark .global-github:hover,
+#dark .global-instagram:hover {
+  color: var(--color-light-primary-400);
+}
+
+#dark:first-child ul li {
+  color: var(--color-light-primary-300);
+}
+#dark:first-child ul li:hover {
+  color: var(--color-light-primary-400);
+}
+
+#dark .global-position {
+  color: var(--color-light-primary-400);
+}
+
+/* Dark Mode - About Page */
+
+#dark .global-about {
+  color: var(--color-light-primary-200);
+}
+
+#dark .global-about h1 {
+  color: var(--color-light-primary-300);
+  text-decoration-color: var(--color-light-primary-300);
+}
+
+#dark .global-bold {
+  color: var(--color-light-primary-400);
+}
+
+/* Dark Mode-Skills Page */
+
+#dark .global-skills__header {
+  color: var(--color-light-primary-200);
+}
+
+#dark .global-skills__header h2 {
+  color: var(--color-light-primary-300);
+}
+
+#dark .global-card {
+  background: var(--color-light-primary-700);
+}
+#dark .global-card h3 {
+  color: var(--color-light-primary-100);
+}
+
+#dark .global-card ul li {
+  color: var(--color-light-primary-200);
+}
+
+#dark .global-line {
+  border: 1.3px solid var(--color-light-primary-100);
+}
+
+#dark .global-circle {
+  background: var(--color-light-primary-700);
+}
+
+/* 
+Work Page - Dark Mode */
+
+#dark .global-project__container {
+  background-color: var(--color-light-primary-100);
+}
+#dark .global-project__container p {
+  color: var(--color-light-primary-400);
+}
+
+#dark .global-project__wrapper h2 {
+  color: var(--color-light-primary-300);
+}
+
+/* Contact Page - Dark Mode */
+#dark .global-contact h1,
+#dark .global-contact h3 {
+  color: var(--color-light-primary-300);
+}
+
+#dark .global-contact {
+  color: var(--color-light-primary-100);
+}
+
+#dark .global-user__icon {
+  color: var(--color-light-primary-300);
+}
+
+#dark .global-form input,
+#dark .global-form textarea {
+  color: var(--color-light-primary-100);
+  box-shadow: 0 0 7px var(--color-light-primary-500);
+}
+#dark .global-form input::placeholder,
+#dark .global-form textarea::placeholder {
+  color: var(--color-light-primary-200);
+}
+
+#dark .global-form input:focus,
+#dark .global-form textarea:focus {
+  background: var(--color-light-primary-700);
+}
+
+#dark .global-candidate__info {
+  color: var(--color-light-primary-200);
+}
+
+#dark .global-house {
+  color: var(--color-light-primary-400);
+}
+
+#dark .global-envelope {
+  color: #ededed;
+}
+
+#dark .global-card2 {
+  background: var(--color-light-primary-100);
+}
+
+#dark .global-invalid input,
+#dark .global-invalid textarea {
+  background-color: #e34040;
 }
 
 
-.light {
-  background: #fff;
-}
-body {
-  background: #fff;
+#dark .global-invalid input::placeholder,
+#dark .global-invalid textarea::placeholder {
+  color:#fff
 }
 
-.dark {
-  background-color: black;
+#dark input:-webkit-autofill,
+#dark .textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px#121212 inset !important;
+  -webkit-text-fill-color:var(--color-light-primary-100) !important;
 }
-
-.dark main {
- 
-}
-
 

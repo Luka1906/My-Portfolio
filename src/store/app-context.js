@@ -4,8 +4,8 @@ const AppContext = React.createContext({
     theme: null,
     toggleTheme: () => {},
     menu: false,
-    onClose: () => {},
-    onShow: () => {}
+  
+
 
    
 })

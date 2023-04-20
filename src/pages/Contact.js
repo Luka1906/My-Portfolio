@@ -4,19 +4,26 @@ import ContactForm from '../components/ContactForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import Map from '../components/GoogleMap';
+import {motion} from 'framer-motion';
+import { formAnimation } from '../animations/animations';
 
 
 const ContactPage = () => {
     return (
         <div className={classes['contact-wrapper']}>
-        <div className={classes['contact-page']}>
-        <div className={classes.contact}>
+        <motion.div
+        variants={formAnimation}
+        initial={"hidden"}
+        animate={"visible"}
+        
+        className={classes['contact-page']}>
+        <div className={`global-contact ${classes.contact}`}>
             <h1>Contact me</h1>
             <h3>Let's talk! <span><FontAwesomeIcon icon={faCommentDots} /></span></h3>
-            <p>Please email me if you have any question and would like to connect or call me on <span className={classes.number}>331/308-4904.</span> </p>
+            <p>Please email me if you have any question regarding portfolio or you would like to connect </p>
         </div>
         <ContactForm/>
-        </div>
+        </motion.div>
           <Map/>
           </div>
     )

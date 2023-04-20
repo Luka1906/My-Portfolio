@@ -13,105 +13,82 @@ const NavBar = () => {
   const appContext = useContext(AppContext);
 
   return (
-    <Fragment>
-      <motion.div
-        // variants={navBarAnimation}
-        // initial={"hidden"}
-        // animate={"visible"}
-        className={classes.header}
-      >
-        <Logo />
-        <nav>
-          <ul
-            className={`${classes["nav-bar"]} ${appContext.menu &&
-              classes.visible}`}
+    <motion.div className={classes.header}>
+      <Logo />
+      <nav>
+        <ul
+          className={`${classes["nav-bar"]} ${appContext.menu &&
+            classes.visible}`}
+        >
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? classes.active : undefined
+            }
+            to="/"
           >
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-              to="/"
-            >
-              {" "}
-              <motion.li
-                variants={linksHoverAnimation}
-                whileHover={"linkHover"}
-              >
-                Home
-              </motion.li>
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-              to="about"
-            >
-              {" "}
-              <motion.li
-                variants={linksHoverAnimation}
-                whileHover={"linkHover"}
-              >
-                About
-              </motion.li>
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-              to="skills"
-            >
-              {" "}
-              <motion.li
-                variants={linksHoverAnimation}
-                whileHover={"linkHover"}
-              >
-                Skills
-              </motion.li>
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-              to="work"
-            >
-              {" "}
-              <motion.li
-                variants={linksHoverAnimation}
-                whileHover={"linkHover"}
-              >
-                Work
-              </motion.li>
-            </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-              to="contact"
-            >
-              {" "}
-              <motion.li
-                variants={linksHoverAnimation}
-                whileHover={"linkHover"}
+            {" "}
+            <motion.li variants={linksHoverAnimation} whileHover={"linkHover"}>
+              Home
+            </motion.li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? classes.active : undefined
+            }
+            to="about"
+          >
+            {" "}
+            <motion.li variants={linksHoverAnimation} whileHover={"linkHover"}>
+              About
+            </motion.li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? classes.active : undefined
+            }
+            to="skills"
+          >
+            {" "}
+            <motion.li variants={linksHoverAnimation} whileHover={"linkHover"}>
+              Skills
+            </motion.li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? classes.active : undefined
+            }
+            to="work"
+          >
+            {" "}
+            <motion.li variants={linksHoverAnimation} whileHover={"linkHover"}>
+              Work
+            </motion.li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? classes.active : undefined
+            }
+            to="contact"
+          >
+            {" "}
+            <motion.li variants={linksHoverAnimation} whileHover={"linkHover"}>
+              Contact
+            </motion.li>
+          </NavLink>
+        </ul>
 
-              >
-                Contact
-              </motion.li>
-            </NavLink>
-          </ul>
-
-          <span className={classes.switch}>
-            <CustomizedSwitches />
-          </span>
-          {!appContext.menu && (
-            <FontAwesomeIcon
-              onClick={appContext.onShow}
-              className={classes.bars}
-              icon={faBars}
-            />
-          )}
-        </nav>
-      </motion.div>
-    </Fragment>
+        <span className={classes.switch}>
+          <CustomizedSwitches />
+        </span>
+        {!appContext.menu && (
+          <FontAwesomeIcon
+            onClick={appContext.onShow}
+            className={classes.bars}
+            icon={faBars}
+          />
+        )}
+      </nav>
+    </motion.div>
   );
 };
 

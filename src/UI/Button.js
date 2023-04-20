@@ -1,7 +1,8 @@
 
 import classes from "./Button.module.css";
 import { motion } from "framer-motion";
-import { buttonAnimation} from "../animations/animations";
+import { buttonAnimation } from "../animations/animations";
+
 const Button = (props) => {
   return (
     <motion.button
@@ -11,6 +12,8 @@ const Button = (props) => {
       whileHover={"buttonHover"}
       className={classes.button}
       type={props.type || "submit"}
+      disabled={props.disabled}
+
     >
       {props.children}
     </motion.button>

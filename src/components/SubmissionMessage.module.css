@@ -1,0 +1,73 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+.submission-card {
+    z-index:50000;
+    position: absolute;
+  
+
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0.3rem 1rem;
+    
+}
+
+
+
+.submission-check {
+    position: absolute;
+    left: -2rem;
+    bottom: 3rem;
+    background: #4BB543;
+    color: var(--color-light-primary-100);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submission-close {
+    position: absolute;
+    left: 21.2rem;
+    bottom: 2.6rem;
+    font-size: 1.15rem;
+    cursor: pointer;
+    color: var(--color-light-primary-700);
+    transition: 0.2s;
+
+    
+}
+
+.submission-close:hover {  
+   color:var(--color-light-primary-400)
+  
+}
+
+.check {
+    font-size: 2.7rem;
+}
+
+.submission-msg h4 {
+    color: #4BB543;
+    text-align: center;
+}
+
+.submission-msg p {
+    font-size: 1.2rem;
+    color:var(--color-light-primary-700);
+    font-weight: 500;
+    
+}

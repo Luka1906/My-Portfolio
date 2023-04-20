@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 const HomePage = () => {
   return (
     <>
-    
       <MainPage />
     </>
   );

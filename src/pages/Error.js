@@ -3,7 +3,7 @@ import classes from "./Error.module.css";
 import error from "../assets/images/error.jpeg";
 import NavBar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
-import Button from "../components/Button";
+import Button from "../UI/Button";
 import {useContext } from "react";
 import AppContext from "../store/app-context";
 

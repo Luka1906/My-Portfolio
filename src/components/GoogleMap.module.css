@@ -1,9 +1,8 @@
+
 .map-container {
   width: 50rem;
-  min-height: 35rem;
-  height: 35rem;
-  margin-top: 2.5rem;
-
+  height: 31rem;
+  margin-top: 2.5rem;;
 }
 
 label .info-text {
@@ -11,39 +10,45 @@ label .info-text {
 }
 
 .map {
-    display: flex;
-    justify-content: flex-end;
-
+  display: flex;
+  justify-content: flex-end;
 }
 
-.map-info {
-  border: none;
-  position: absolute;
-  z-index: 99999;
-  margin-top: 7.5rem;
-  padding: 0.5rem;
+.candidate-info {
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  line-height: 1.4rem;
-  background-color: var(--color-light-primary-100);
-  font-weight: 500;
-  
-  
+  gap: 1.3rem;
+  font-size: 1.15rem;
+  font-weight: 450;
 }
 
-.email {
-    color: var(--color-light-primary-600);
-    font-weight: 700;
+.candidate-info >* {
+  display: flex;
+  gap: 0.5rem;
+  
+}
+.ninja {
+  color:#8FD129;
+}
+.house {
+  color: var(--color-light-primary-500)
+}
+.pin {
+  color:#ED1C28;
+}
+.envelope {
+  color:#2d2d2d
 }
 
-@media(max-width:1200px) {
+
+@media (max-width: 1200px) {
   .map {
-    width: 35rem
+    width: 30rem;
   }
   .map-info {
     transform: scale(0.8);
     position: absolute;
     right: 0.9rem;
-   
   }
 }

@@ -2,9 +2,9 @@ import classes from './AboutMe.module.css'
 
 const AboutMe = () => {
     return (
-        <div className={classes.about}>
+        <div className={`global-about ${classes.about}`}>
             <h1>About Me</h1>
-            <p> I am very ambitious and hard working<span className={classes.bold}> Front-End developer </span>looking for a role in a company 
+            <p> I am very ambitious and hard working<span className={`global-bold ${classes.bold}`}> Front-End developer </span>looking for a role in a company 
             where I can showcase but also extend all of my potentinal and get oportunity to work with the latest
             technologies on challenging projects.<br/><br/>
 

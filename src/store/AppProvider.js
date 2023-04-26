@@ -5,14 +5,17 @@ import AppContext from "./app-context";
 
 
 const AppProvider = (props) => {
-  const [theme, setTheme] = useState("light");
+  const storedTheme = localStorage.getItem("theme");
+  const [theme, setTheme] = useState(storedTheme);
   const [showMenu, setShowMenu] = useState(false);
   
-
-
   const toggleTheme = () => {
-    setTheme((prevMode) => (prevMode === "light" ? "dark" : "light"));
+    setTheme((prevMode) => (prevMode === "light"? "dark" : "light"));
   };
+  useEffect(()=> {
+    localStorage.setItem("theme", theme);
+  },[theme]);
+
 
   const closeHandler = () => {
     setShowMenu(false);

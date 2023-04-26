@@ -75,6 +75,7 @@ const SkillGraph = () => {
         <Card className={classes.card3}>
           <h3>UI/UX Design</h3>
           <ul>
+            <li>Tailwind CSS</li>
             <li>Material-UI</li>
             <li>Framer Motion</li>
           </ul>

@@ -163,3 +163,6 @@ Work Page - Dark Mode */
   -webkit-text-fill-color:var(--color-light-primary-100) !important;
 }
 
+#dark .global-error {
+  color: var(--color-light-primary-100)
+}

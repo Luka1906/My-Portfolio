@@ -16,7 +16,7 @@ const ErrorPage = (props) => {
     <>
       {!appContext.menu && <NavBar />}
       {appContext.menu && <Sidebar  />}
-      <main className={classes.error}>
+      <main className={`global-error ${classes.error}`}>
         <h1>404 ERROR PAGE</h1>
         <img className={classes["error-img"]} src={error} alt="404 error"></img>
         <h2>OPPS! PAGE NOT FOUND</h2>

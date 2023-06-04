@@ -14,7 +14,7 @@ const SocialMedia = () => {
       <motion.a
         variants={bouncingAnimation}
         whileHover={"hover"}
-        href="https://www.linkedin.com/in/michael-m-5940b8235/"
+        href="linkedin.com/in/luka-matović-5940b8235"
         target="_blank"
         rel="noreferrer"
       >

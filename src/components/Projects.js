@@ -7,10 +7,6 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import classes from "./Projects.module.css";
-import image1 from "..//assets/images/project1.jpg";
-import image2 from "..//assets/images/project2.jpg";
-import image3 from "..//assets/images/project3.jpg";
-import image4 from "..//assets/images/project4.jpg";
 
 import { motion } from "framer-motion";
 import { bouncingAnimation } from "../animations/animations";
@@ -21,6 +17,11 @@ import { useContext } from "react";
 import ProjectContext from "../store/project-context";
 import Project from "./Project";
 import { AnimatePresence } from "framer-motion";
+const image1 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869738/My%20Portfolio/project1_rjvygh.png";
+const image2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869744/My%20Portfolio/project2_o5zukf.png";
+const image3 =  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869863/My%20Portfolio/project3_ffzbd1.png";
+const image4 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869750/My%20Portfolio/project4_dgdkmm.png";
+
 
 const Projects = () => {
   const projectContext = useContext(ProjectContext);

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import classes from "./Error.module.css";
-import error from "../assets/images/error.jpeg";
 import NavBar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Button from "../UI/Button";
 import {useContext } from "react";
 import AppContext from "../store/app-context";
+const error = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685866801/Error%20Page%20Image/error_shexjz.jpg"
 
 
 const ErrorPage = (props) => {

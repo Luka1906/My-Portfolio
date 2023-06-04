@@ -84,3 +84,10 @@
 .menu-header .x-icon:hover {
   color: var(--color-light-primary-500)
 }
+
+@media (max-width:360px) {
+  .menu-header :first-child{
+    font-size: 1.8rem;
+  }
+  
+}

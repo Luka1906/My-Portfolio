@@ -29,13 +29,17 @@
   font-weight: 800;
 }
 
+@media (max-width: 480px) {
+  .about {
+    position: relative;
+    bottom: 4rem;
+  }
+}
+
 @media (max-width: 768px) {
   .about {
     width: 85%;
     display: flex;
-    
-
-
 
   }
   .about h1 {

@@ -3,10 +3,9 @@ import { useMediaQuery } from "@mui/material";
 import AppContext from "./app-context";
 
 
-
 const AppProvider = (props) => {
   const storedTheme = localStorage.getItem("theme");
-  const [theme, setTheme] = useState(storedTheme);
+  const [theme, setTheme] = useState(storedTheme || "light");
   const [showMenu, setShowMenu] = useState(false);
   
   const toggleTheme = () => {

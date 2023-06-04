@@ -1,4 +1,4 @@
-import { Fragment, useContext } from "react";
+import { useContext } from "react";
 import classes from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
 import CustomizedSwitches from "./Switch";
@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Logo from "./Logo";
 import AppContext from "../store/app-context";
-import { motion } from "framer-motion";
-import { linksHoverAnimation, navBarAnimation } from "../animations/animations";
+import { AnimatePresence, motion } from "framer-motion";
+import { linksHoverAnimation } from "../animations/animations";
 
 const NavBar = () => {
   const appContext = useContext(AppContext);

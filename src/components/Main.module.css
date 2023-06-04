@@ -83,6 +83,9 @@
 .avatar img:hover {
   animation-play-state: paused;
 }
+.resume {
+  text-decoration: none;
+}
 @keyframes liquid {
   0%,
   100% {

@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import classes from "./Projects.module.css";
 import image1 from "..//assets/images/project1.jpg";
-import image2 from "..//assets/images/project3.jpg";
+import image2 from "..//assets/images/project2.jpg";
 import image3 from "..//assets/images/project3.jpg";
 import image4 from "..//assets/images/project4.jpg";
 
@@ -20,9 +20,9 @@ import { navBarAnimation } from "../animations/animations";
 import { useContext } from "react";
 import ProjectContext from "../store/project-context";
 import Project from "./Project";
+import { AnimatePresence } from "framer-motion";
 
 const Projects = () => {
-
   const projectContext = useContext(ProjectContext);
 
   const PROJECT_DATA = [
@@ -30,12 +30,16 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image1,
       text:
-        " Simulation of the food app made in React that helps user to choose,save and order the food from the menu",
+        "Fullstack webshop project with fully functional cart and product filters. Author used Express JS and MongoDB to enable Stripe for checkout, enable register,singin or forgot password actions and create and saved JWT authentication tokens.",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Food-App.git",
+      href1: "https://fascinating-sfogliatella-6516e2.netlify.app/",
       react: (
         <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
+      ),
+      node: (
+        <FontAwesomeIcon className={classes["react-node"]} icon={faNodeJs} />
       ),
       onShow: projectContext.project1OnShow,
       onClose: projectContext.project1OnClose,
@@ -49,11 +53,12 @@ const Projects = () => {
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Chat-simulation.git",
-      react: (
-        <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
-      ),
+      href1: "https://chat-simulation.onrender.com",
       node: (
         <FontAwesomeIcon className={classes["react-node"]} icon={faNodeJs} />
+      ),
+      javaScript: (
+        <FontAwesomeIcon className={classes["react-js"]} icon={faJsSquare} />
       ),
       onShow: projectContext.project2OnShow,
       onClose: projectContext.project2OnClose,
@@ -63,15 +68,14 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image3,
       text:
-        " Simulation of the food app made in React that helps user to choose,save and order the food from the menu",
+        " Simulation of the food app made in React that helps user to choose,save and order the food from the menu. Author used Firebase to saved and retrieve website menu data and users orders",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Chat-simulation.git",
-      javaScript: (
-        <FontAwesomeIcon className={classes["react-js"]} icon={faJsSquare} />
-      ),
-      node: (
-        <FontAwesomeIcon className={classes["react-node"]} icon={faNodeJs} />
+      href1: "https://gilded-madeleine-43994b.netlify.app/",
+  
+      react: (
+        <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
       ),
       onShow: projectContext.project3OnShow,
       onClose: projectContext.project3OnClose,
@@ -81,10 +85,11 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image4,
       text:
-        "  Expenses App made in React that allows users to enter their expenses and dynamically shows how much money they spent in each month",
+        "  Expenses App made in React that allows users to enter their expenses and dynamically shows how much money they spent each month",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Simple-Expenses-App.git",
+      href1: "https://sensational-narwhal-e5ed61.netlify.app/",
       react: (
         <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
       ),
@@ -105,35 +110,38 @@ const Projects = () => {
       </motion.h2>
       <div className={classes.projects}>
         {PROJECT_DATA.map((project) => (
-          <motion.div
-            key={project.id}
-            className={`global-project__container ${classes["project-container"]}`}
-          >
-            <div className={classes["project-content"]}>
-              {project.project && (
-                <Project
-                  image={project.image}
-                  text={project.text}
-                  github={project.github}
-                  player={project.player}
-                  href={project.href}
-                  onClose={project.onClose}
-                />
-              )}
-              <div className={classes["box-content"]}>
-                {project.react}
-                {project.node}
-                {project.javaScript}
+          <AnimatePresence>
+            <div
+              key={project.id}
+              className={`global-project__container ${classes["project-container"]}`}
+            >
+              <div className={classes["project-content"]}>
+                {project.project && (
+                  <Project
+                    image={project.image}
+                    text={project.text}
+                    github={project.github}
+                    player={project.player}
+                    href={project.href}
+                    href1={project.href1}
+                    onClose={project.onClose}
+                  />
+                )}
+                <div className={classes["box-content"]}>
+                  {project.react}
+                  {project.node}
+                  {project.javaScript}
+                </div>
+                <motion.p
+                  onMouseDown={project.onShow}
+                  variants={bouncingAnimation}
+                  whileHover={"hover"}
+                >
+                  Click for more!
+                </motion.p>
               </div>
-              <motion.p
-                onMouseDown={project.onShow}
-                variants={bouncingAnimation}
-                whileHover={"hover"}
-              >
-                Click for more!
-              </motion.p>
             </div>
-          </motion.div>
+          </AnimatePresence>
         ))}
       </div>
     </div>

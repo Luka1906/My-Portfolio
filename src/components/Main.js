@@ -7,6 +7,7 @@ import AppContext from "../store/app-context";
 import { useContext } from "react";
 import {motion} from "framer-motion";
 import { mainPageAnimation } from "../animations/animations";
+import myResume from "../assets/pdf/My Resume.pdf"
 
 const MainPage = () => {
   const appContext = useContext(AppContext);
@@ -32,7 +33,10 @@ const MainPage = () => {
         <div className={classes.avatar}>
           <img src={avatar} alt="avatar" />
         </div>
+        <a href={myResume} download className={classes.resume} >
         <Button type="button">Download Resume</Button>
+        </a>
+        
       </div>
       <span className={classes["bottom-tag"]}>&lt;/body&gt;</span>
     </motion.div>

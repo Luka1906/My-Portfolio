@@ -16,6 +16,7 @@ const ModalOverlay = (props) => {
       variants={projectModalAnimation}
       initial={"hidden"}
       animate={"visible"}
+      exit={"exit"}
       className="project-modal"
     >
      {props.children}

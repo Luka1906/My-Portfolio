@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Button from "../UI/Button";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
 import useInput from "../hooks/use-input";
 import SubmissionMessage from "./SubmissionMessage";

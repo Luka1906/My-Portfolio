@@ -14,7 +14,7 @@ const WorkPage = () => {
       transition={transition}
     
     >
-      {<Projects />}
+      <Projects />
     </motion.div>
   );
 };

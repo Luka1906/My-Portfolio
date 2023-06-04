@@ -51,6 +51,7 @@ const SocialMedia = () => {
         />
       </motion.a>
     </div>
+    
   );
 };
 export default SocialMedia;

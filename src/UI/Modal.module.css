@@ -22,13 +22,3 @@
   color: #e6e5e5;
 }
 
-@keyframes slide-down {
-  from {
-    opacity: 0;
-    transform: translateX(20rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
-}

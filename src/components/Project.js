@@ -8,6 +8,8 @@ const Project = (props) => {
  
 
   return (
+   
+  
     <Project1Modal onClose={props.onClose}>
       <div className="projects">
         <img className="project-image" src={props.image} alt="project1" />
@@ -18,7 +20,8 @@ const Project = (props) => {
             <a href={props.href} target="blank">
               {props.github}
             </a>
-            <p>Live Demo</p> <a>{props.player}</a>
+            <p>Live Demo</p> 
+            <a href={props.href1} target="blank">{props.player}</a>
           </div>
 
           <ProjectButton onClose={props.onClose}>
@@ -27,6 +30,9 @@ const Project = (props) => {
         </div>
       </div>
     </Project1Modal>
+  
+
+   
   );
 };
 export default Project;

@@ -20,7 +20,7 @@ const ContactPage = () => {
         <div className={`global-contact ${classes.contact}`}>
             <h1>Contact me</h1>
             <h3>Let's talk! <span><FontAwesomeIcon icon={faCommentDots} /></span></h3>
-            <p>Please email me if you have any question regarding portfolio or you would like to connect </p>
+            <p>Please email me if you have any question regarding portfolio or you would like to connect. </p>
         </div>
         <ContactForm/>
         </motion.div>

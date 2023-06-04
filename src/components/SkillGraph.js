@@ -49,9 +49,9 @@ const SkillGraph = () => {
         <Card className={classes.card2}>
           <h3>Back-End Development</h3>
           <ul>
-            <li>Node JS(Express JS)</li>
+            <li>Node JS (Express JS)</li>
             <li>Databases (MYSQL and MongoDB)</li>
-            <li>Template Engines(EJS)</li>
+            <li>Template Engines (EJS)</li>
           </ul>
         </Card>
 

@@ -27,7 +27,6 @@ export const animationThree = {
 
 export const buttonAnimation = {
   hidden: {
-    // x: "-100vw",
     opacity: 0,
   },
   visible: {
@@ -36,12 +35,6 @@ export const buttonAnimation = {
       delay: 0.6,
       duration: 1,
     },
-    // x: 0,
-    // transition: {
-    //   type: "spring",
-    //   stiffness: 120,
-    //   delay: 0.3,
-    // },
   },
   buttonHover: {
     backgroundPosition: "center",
@@ -113,7 +106,6 @@ export const mapAnimation = {
     scale: 1,
 
     transition: {
-   
       delay: 0.5,
       duration: 0.5,
     },
@@ -199,6 +191,13 @@ export const projectModalAnimation = {
       duration: 0.4,
     },
   },
+  exit: {
+    opacity: 0,
+    scale: 0.6,
+    transition: {
+      duration: 0.2,
+    },
+  },
 };
 
 export const infoAnimation = {
@@ -220,33 +219,54 @@ export const infoAnimation = {
 export const mainPageAnimation = {
   hidden: {
     opacity: 0,
-    scale:0.7
- 
+    scale: 0.7,
   },
   visible: {
-    opacity:1,
-    scale:1,
- 
+    opacity: 1,
+    scale: 1,
+
     transition: {
-      duration:0.3
-    }
-  }
-}
+      duration: 0.3,
+    },
+  },
+};
 
 export const submissionBackdropAnimation = {
-  visible: {opacity: 1},
-  hidden: {opacity: 0}
-}
+  visible: { opacity: 1 },
+  hidden: { opacity: 0 },
+};
 
 export const submissionModalAnimation = {
   hidden: {
     y: "-100vh",
-    opacity: 0
+    opacity: 0,
   },
   visible: {
     y: "-7em",
     x: "2.5rem",
-    opacity:1,
-  }
-}
+    opacity: 1,
+  },
+};
 
+export const popUpMenuToggle = {
+  hidden: {
+    x: "40vw",
+    y: "0",
+  },
+  visible: {
+    x: 0,
+    y: "0",
+    transition: {
+      duration: 0.25,
+      ease: "easeOut",
+    },
+  },
+  exit: {
+    x: "140vw",
+    y: "0",
+    transition: {
+      duration: 0.25,
+      ease: "easeOut",
+    },
+  },
+};

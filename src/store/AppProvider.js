@@ -17,12 +17,13 @@ const AppProvider = (props) => {
 
 
   const closeHandler = () => {
-    setShowMenu(false);
 
+      setShowMenu(false);
+  
   };
-  const showHandler = () => {
-    setShowMenu(true);
 
+  const showHandler = () => {
+      setShowMenu(true);
   };
 
 

@@ -18,9 +18,10 @@ import ProjectContext from "../store/project-context";
 import Project from "./Project";
 import { AnimatePresence } from "framer-motion";
 const image1 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869738/My%20Portfolio/project1_rjvygh.png";
-const image2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869744/My%20Portfolio/project2_o5zukf.png";
-const image3 =  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869863/My%20Portfolio/project3_ffzbd1.png";
-const image4 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869750/My%20Portfolio/project4_dgdkmm.png";
+const image2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1688223346/My%20Portfolio/Screen_Shot_2023-07-01_at_9.54.52_AM_eoueqe.png"
+const image3 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869744/My%20Portfolio/project2_o5zukf.png";
+const image4 =  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869863/My%20Portfolio/project3_ffzbd1.png";
+
 
 
 const Projects = () => {
@@ -31,10 +32,10 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image1,
       text:
-        "Fullstack webshop project with fully functional cart and product filters. Author used Express JS and MongoDB to enable Stripe for checkout, enable register,singin or forgot password actions and create and saved JWT authentication tokens.",
+        "Responsive fullstack webshop project with fully functional cart and product filters. Author used Express JS and MongoDB to enable Stripe for checkout, enable register,singin or forgot password actions and create and saved JWT authentication tokens.",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
-      href: "https://github.com/Luka1906/Food-App.git",
+      href: "https://github.com/Luka1906/Webshop-app.git",
       href1: "https://fascinating-sfogliatella-6516e2.netlify.app/",
       react: (
         <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
@@ -50,16 +51,16 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image2,
       text:
-        " Chat app made with Socket.io, EJS and Vanilla JavaScript. It enables users to message each other if they chose the same chatroom.",
+        "Responsive fullstack social media app made with a help of Express JS and MongoDB for saving and sending users and posts data to the frontend. Client side of the app was fully made of Material UI components. Redux Toolkit and React Dropozne are for keeping and persisting data on the frontend.  ",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
-      href: "https://github.com/Luka1906/Chat-simulation.git",
-      href1: "https://chat-simulation.onrender.com",
+      href: "https://github.com/Luka1906/Social-Media-App.git",
+      href1: "https://regal-flan-6f8619.netlify.app/",
+      react: (
+        <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
+      ),
       node: (
         <FontAwesomeIcon className={classes["react-node"]} icon={faNodeJs} />
-      ),
-      javaScript: (
-        <FontAwesomeIcon className={classes["react-js"]} icon={faJsSquare} />
       ),
       onShow: projectContext.project2OnShow,
       onClose: projectContext.project2OnClose,
@@ -69,28 +70,32 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image3,
       text:
-        " Simulation of the food app made in React that helps user to choose,save and order the food from the menu. Author used Firebase to saved and retrieve website menu data and users orders",
+        " Chat app made with Socket.io, EJS and Vanilla JavaScript. It enables users to message each other if they chose the same chatroom.",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Chat-simulation.git",
-      href1: "https://gilded-madeleine-43994b.netlify.app/",
-  
-      react: (
-        <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
+      href1: "https://chat-simulation-production.up.railway.app/",
+      node: (
+        <FontAwesomeIcon className={classes["react-node"]} icon={faNodeJs} />
+      ),
+      javaScript: (
+        <FontAwesomeIcon className={classes["react-js"]} icon={faJsSquare} />
       ),
       onShow: projectContext.project3OnShow,
       onClose: projectContext.project3OnClose,
       project: projectContext.project3,
     },
+   
     {
       id: Math.floor(Math.random() * 1000),
       image: image4,
       text:
-        "  Expenses App made in React that allows users to enter their expenses and dynamically shows how much money they spent each month",
+        " Simulation of the food app made in React that helps user to choose,save and order the food from the menu. Author used Firebase to saved and retrieve website menu data and users orders",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
-      href: "https://github.com/Luka1906/Simple-Expenses-App.git",
-      href1: "https://sensational-narwhal-e5ed61.netlify.app/",
+      href: "https://github.com/Luka1906/Food-App.git",
+      href1: "https://gilded-madeleine-43994b.netlify.app/",
+  
       react: (
         <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
       ),
@@ -98,6 +103,7 @@ const Projects = () => {
       onClose: projectContext.project4OnClose,
       project: projectContext.project4,
     },
+   
   ];
 
   return (

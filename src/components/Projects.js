@@ -18,7 +18,7 @@ import ProjectContext from "../store/project-context";
 import Project from "./Project";
 import { AnimatePresence } from "framer-motion";
 const image1 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869738/My%20Portfolio/project1_rjvygh.png";
-const image2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1688223346/My%20Portfolio/Screen_Shot_2023-07-01_at_9.54.52_AM_eoueqe.png"
+const image2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1688712429/My%20Portfolio/Screen_Shot_2023-07-07_at_1.43.49_AM_w1haxp.png"
 const image3 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869744/My%20Portfolio/project2_o5zukf.png";
 const image4 =  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869863/My%20Portfolio/project3_ffzbd1.png";
 

@@ -32,7 +32,7 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image1,
       text:
-        "Responsive fullstack webshop project with fully functional cart and product filters. Author used Express JS and MongoDB to enable Stripe for checkout, enable register,singin or forgot password actions and create and saved JWT authentication tokens.",
+        "Responsive fullstack webshop project with fully functional cart and product filters. Author used Stripe API for checkout, Send Grid API for sending 'forgot password' emails to users and MongoDB for creating and saving user credentials, including JWT authentication tokens.",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Webshop-app.git",
@@ -51,7 +51,7 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image2,
       text:
-        "Responsive fullstack social media app made with a help of Express JS and MongoDB for saving and sending users and posts data to the frontend. Client side of the app was fully made of Material UI components. Redux Toolkit and React Dropozne are for keeping and persisting data on the frontend.  ",
+        "Responsive fullstack social media app made with Express JS and MongoDB for saving and sending users and posts data to the frontend. Client side of the app was fully made with Material UI components. Redux Toolkit and React Dropozne are used for keeping and persisting data on the frontend. ",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Social-Media-App.git",
@@ -70,7 +70,7 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image3,
       text:
-        " Chat app made with Socket.io, EJS and Vanilla JavaScript. It enables users to message each other if they chose the same chatroom.",
+        "Chat app made with Socket.io, EJS and JavaScript on frontend. It enables users to message each other if they chose the same chatroom.",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Chat-simulation.git",

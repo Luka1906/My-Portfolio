@@ -51,7 +51,7 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image2,
       text:
-        "Responsive fullstack social media app made with Express JS and MongoDB for saving and sending users and posts data to the frontend. Client side of the app was fully made with React and Material UI components while Redux Toolkit is used for keeping and persisting data on the frontend. ",
+        "Responsive fullstack social media app made with Express JS and MongoDB for saving and sending users and posts data to the frontend. Client side of the app was fully made with React and Material UI components while Redux Toolkit is used for saving and sharing backend data across the app. ",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Social-Media-App.git",

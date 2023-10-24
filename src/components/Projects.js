@@ -18,7 +18,7 @@ import ProjectContext from "../store/project-context";
 import Project from "./Project";
 import { AnimatePresence } from "framer-motion";
 const image1 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869738/My%20Portfolio/project1_rjvygh.png";
-const image2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1688712429/My%20Portfolio/Screen_Shot_2023-07-07_at_1.43.49_AM_w1haxp.png"
+const image2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1698122116/Screen_Shot_2023-10-23_at_11.33.58_PM_ofbgej.png"
 const image3 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869744/My%20Portfolio/project2_o5zukf.png";
 const image4 =  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869863/My%20Portfolio/project3_ffzbd1.png";
 
@@ -51,7 +51,7 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image2,
       text:
-        "Responsive fullstack social media app made with Express JS and MongoDB for saving and sending users and posts data to the frontend. Client side of the app was fully made with React and Material UI components while Redux Toolkit is used for saving and sharing backend data across the app. ",
+        "Responsive fullstack social media app made with Express JS and MongoDB for saving and sending users and posts data to the frontend, deleting and updating posts. Client side of the app was fully made with React and Material UI components while Redux Toolkit is used for saving and sharing backend data across the app. ",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Social-Media-App.git",

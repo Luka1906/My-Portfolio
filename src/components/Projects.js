@@ -36,7 +36,7 @@ const Projects = () => {
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Webshop-app.git",
-      href1: "https://fascinating-sfogliatella-6516e2.netlify.app/",
+      href1: "https://serbshop.netlify.app/",
       react: (
         <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
       ),
@@ -55,7 +55,7 @@ const Projects = () => {
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Social-Media-App.git",
-      href1: "https://regal-flan-6f8619.netlify.app/",
+      href1: "https://socializer-app.netlify.app/",
       react: (
         <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
       ),
@@ -94,7 +94,7 @@ const Projects = () => {
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Food-App.git",
-      href1: "https://gilded-madeleine-43994b.netlify.app/",
+      href1: "https://foodess.netlify.app//",
   
       react: (
         <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />

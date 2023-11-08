@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
+import { faCirclePlay,faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
-  faJsSquare,
   faNodeJs,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
@@ -17,12 +16,14 @@ import { useContext } from "react";
 import ProjectContext from "../store/project-context";
 import Project from "./Project";
 import { AnimatePresence } from "framer-motion";
-const image1 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869738/My%20Portfolio/project1_rjvygh.png";
-const image2 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1698122116/Screen_Shot_2023-10-23_at_11.33.58_PM_ofbgej.png"
-const image3 = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869744/My%20Portfolio/project2_o5zukf.png";
-const image4 =  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869863/My%20Portfolio/project3_ffzbd1.png";
-
-
+const image1 =
+  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869738/My%20Portfolio/project1_rjvygh.png";
+const image2 =
+  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1698122116/Screen_Shot_2023-10-23_at_11.33.58_PM_ofbgej.png";
+const image3 =
+  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1699434915/My%20Portfolio/Screen_Shot_2023-11-08_at_3.13.16_AM_ojqty2.png";
+const image4 =
+  "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869863/My%20Portfolio/project3_ffzbd1.png";
 
 const Projects = () => {
   const projectContext = useContext(ProjectContext);
@@ -43,6 +44,9 @@ const Projects = () => {
       node: (
         <FontAwesomeIcon className={classes["react-node"]} icon={faNodeJs} />
       ),
+      database: (
+        <FontAwesomeIcon className={classes["database"]} icon={faDatabase}/>
+      ),
       onShow: projectContext.project1OnShow,
       onClose: projectContext.project1OnClose,
       project: projectContext.project1,
@@ -62,6 +66,9 @@ const Projects = () => {
       node: (
         <FontAwesomeIcon className={classes["react-node"]} icon={faNodeJs} />
       ),
+      database: (
+        <FontAwesomeIcon className={classes["database"]} icon={faDatabase}/>
+      ),
       onShow: projectContext.project2OnShow,
       onClose: projectContext.project2OnClose,
       project: projectContext.project2,
@@ -73,19 +80,22 @@ const Projects = () => {
         "Chat app made with Socket.io, EJS and JavaScript on frontend. It enables users to message each other if they chose the same chatroom.",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
-      href: "https://github.com/Luka1906/Chat-simulation.git",
-      href1: "https://chat-simulation-production.up.railway.app/",
+      href: "https://github.com/Luka1906/MERN-Chat-App.git",
+      href1: "https://chatme-chatapp.netlify.app/",
       node: (
         <FontAwesomeIcon className={classes["react-node"]} icon={faNodeJs} />
       ),
-      javaScript: (
-        <FontAwesomeIcon className={classes["react-js"]} icon={faJsSquare} />
+      react: (
+        <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
+      ),
+      database: (
+        <FontAwesomeIcon className={classes["database"]} icon={faDatabase}/>
       ),
       onShow: projectContext.project3OnShow,
       onClose: projectContext.project3OnClose,
       project: projectContext.project3,
     },
-   
+
     {
       id: Math.floor(Math.random() * 1000),
       image: image4,
@@ -95,7 +105,7 @@ const Projects = () => {
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/Food-App.git",
       href1: "https://foodess.netlify.app//",
-  
+
       react: (
         <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
       ),
@@ -114,6 +124,7 @@ const Projects = () => {
         animate={"visible"}
       >
         Project Gallery
+       
       </motion.h2>
       <div className={classes.projects}>
         {PROJECT_DATA.map((project) => (
@@ -137,7 +148,9 @@ const Projects = () => {
                 <div className={classes["box-content"]}>
                   {project.react}
                   {project.node}
+                  {project.database}
                   {project.javaScript}
+              
                 </div>
                 <motion.p
                   onMouseDown={project.onShow}

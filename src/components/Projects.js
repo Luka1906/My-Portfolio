@@ -77,7 +77,7 @@ const Projects = () => {
       id: Math.floor(Math.random() * 1000),
       image: image3,
       text:
-        "Chat app made with Socket.io, EJS and JavaScript on frontend. It enables users to message each other if they chose the same chatroom.",
+        "Chat app made with Socket.io, Node.js and React. It enables users to message each other and view chat history with each user independently thanks to the MongoDB database where messages are stored.",
       github: <FontAwesomeIcon className="github" icon={faGithub} />,
       player: <FontAwesomeIcon className="play-icon" icon={faCirclePlay} />,
       href: "https://github.com/Luka1906/MERN-Chat-App.git",

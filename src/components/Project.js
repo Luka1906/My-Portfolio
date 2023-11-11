@@ -1,15 +1,9 @@
-
 import Project1Modal from "../UI/Project1Modal";
 import ProjectButton from "../UI/ProjectButton";
-import "./Project.css"
-
+import "./Project.css";
 
 const Project = (props) => {
- 
-
   return (
-   
-  
     <Project1Modal onClose={props.onClose}>
       <div className="projects">
         <img className="project-image" src={props.image} alt="project1" />
@@ -20,19 +14,16 @@ const Project = (props) => {
             <a href={props.href} target="blank">
               {props.github}
             </a>
-            <p>Live Demo</p> 
-            <a href={props.href1} target="blank">{props.player}</a>
+            <p>Live Demo</p>
+            <a href={props.href1} target="blank">
+              {props.player}
+            </a>
           </div>
 
-          <ProjectButton onClose={props.onClose}>
-            Close
-          </ProjectButton>
+          <ProjectButton onClose={props.onClose}>Close</ProjectButton>
         </div>
       </div>
     </Project1Modal>
-  
-
-   
   );
 };
 export default Project;

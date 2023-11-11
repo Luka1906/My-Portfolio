@@ -1,13 +1,12 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
-import "./ProjectModal.css"
+import "./ProjectModal.css";
 import { motion } from "framer-motion";
 import { projectModalAnimation } from "../animations/animations";
 
+
 const Backdrop = (props) => {
-  return (
-    <div className="project-backdrop" onClick={props.onClose}></div>
-  );
+  return <div className="project-backdrop" onClick={props.onClose}></div>;
 };
 
 const ModalOverlay = (props) => {
@@ -41,5 +40,5 @@ const Project1Modal = (props) => {
     </Fragment>
   );
 };
-
+ 
 export default Project1Modal;

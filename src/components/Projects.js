@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCirclePlay,faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faCirclePlay, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faNodeJs,
@@ -15,7 +15,7 @@ import { navBarAnimation } from "../animations/animations";
 import { useContext } from "react";
 import ProjectContext from "../store/project-context";
 import Project from "./Project";
-import { AnimatePresence } from "framer-motion";
+
 const image1 =
   "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869738/My%20Portfolio/project1_rjvygh.png";
 const image2 =
@@ -45,7 +45,7 @@ const Projects = () => {
         <FontAwesomeIcon className={classes["react-node"]} icon={faNodeJs} />
       ),
       database: (
-        <FontAwesomeIcon className={classes["database"]} icon={faDatabase}/>
+        <FontAwesomeIcon className={classes["database"]} icon={faDatabase} />
       ),
       onShow: projectContext.project1OnShow,
       onClose: projectContext.project1OnClose,
@@ -67,7 +67,7 @@ const Projects = () => {
         <FontAwesomeIcon className={classes["react-node"]} icon={faNodeJs} />
       ),
       database: (
-        <FontAwesomeIcon className={classes["database"]} icon={faDatabase}/>
+        <FontAwesomeIcon className={classes["database"]} icon={faDatabase} />
       ),
       onShow: projectContext.project2OnShow,
       onClose: projectContext.project2OnClose,
@@ -89,7 +89,7 @@ const Projects = () => {
         <FontAwesomeIcon className={classes["react-icon"]} icon={faReact} />
       ),
       database: (
-        <FontAwesomeIcon className={classes["database"]} icon={faDatabase}/>
+        <FontAwesomeIcon className={classes["database"]} icon={faDatabase} />
       ),
       onShow: projectContext.project3OnShow,
       onClose: projectContext.project3OnClose,
@@ -113,7 +113,6 @@ const Projects = () => {
       onClose: projectContext.project4OnClose,
       project: projectContext.project4,
     },
-   
   ];
 
   return (
@@ -124,44 +123,40 @@ const Projects = () => {
         animate={"visible"}
       >
         Project Gallery
-       
       </motion.h2>
       <div className={classes.projects}>
         {PROJECT_DATA.map((project) => (
-          <AnimatePresence>
-            <div
-              key={project.id}
-              className={`global-project__container ${classes["project-container"]}`}
-            >
-              <div className={classes["project-content"]}>
-                {project.project && (
-                  <Project
-                    image={project.image}
-                    text={project.text}
-                    github={project.github}
-                    player={project.player}
-                    href={project.href}
-                    href1={project.href1}
-                    onClose={project.onClose}
-                  />
-                )}
-                <div className={classes["box-content"]}>
-                  {project.react}
-                  {project.node}
-                  {project.database}
-                  {project.javaScript}
-              
-                </div>
-                <motion.p
-                  onMouseDown={project.onShow}
-                  variants={bouncingAnimation}
-                  whileHover={"hover"}
-                >
-                  Click for more!
-                </motion.p>
+          <div
+            key={project.id}
+            className={`global-project__container ${classes["project-container"]}`}
+          >
+            <div className={classes["project-content"]}>
+              {project.project && (
+                <Project
+                  image={project.image}
+                  text={project.text}
+                  github={project.github}
+                  player={project.player}
+                  href={project.href}
+                  href1={project.href1}
+                  onClose={project.onClose}
+                />
+              )}
+              <div className={classes["box-content"]}>
+                {project.react}
+                {project.node}
+                {project.database}
+                {project.javaScript}
               </div>
+              <motion.p
+                onMouseDown={project.onShow}
+                variants={bouncingAnimation}
+                whileHover={"hover"}
+              >
+                Click for more!
+              </motion.p>
             </div>
-          </AnimatePresence>
+          </div>
         ))}
       </div>
     </div>

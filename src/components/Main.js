@@ -6,7 +6,7 @@ import AppContext from "../store/app-context";
 import { useContext } from "react";
 import {motion} from "framer-motion";
 import { mainPageAnimation } from "../animations/animations";
-import myResume from "../assets/pdf/My Resume copy.pdf"
+import myResume from "../assets/pdf/Resume.pdf"
 const avatar = "https://res.cloudinary.com/dodlxk4hg/image/upload/v1685869729/My%20Portfolio/avatar_qzdpfh.jpg"
 
 const MainPage = () => {
